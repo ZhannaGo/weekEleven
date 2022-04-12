@@ -1,0 +1,35 @@
+<script>
+    function f(){
+        return [1,2,3,4];
+    }
+
+    const [a, b] = f();
+    console.log(a);
+    console.log(b);
+    //1
+    //2
+
+
+    const user = {
+        id: 209;
+        firstName: 'peter',
+        lastName: 'parker',
+        age: 19
+    }
+
+    function userId({id}){
+        return id;
+    }
+    console.log(userId(user));
+    //209
+
+    function userId({age}){
+        return age;
+    }
+    console.log(userId(user));
+    //19                  
+
+
+
+
+</script>

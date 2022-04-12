@@ -1,0 +1,29 @@
+<script>
+    /*
+    ES6 allows you to define values for default parameters within the function signature. Code along with this video and you’ll discover that this makes your code more concise.  
+
+*/
+
+    function multiply(a,b) {
+        return a*b;
+    }
+    console.log(multiply(5,4)); // 20
+    console.log(multiply(5)); // NaN
+    
+
+    // if we do following
+    function multiply(a,b) {
+        if (!b) b = 1;
+        return a*b;
+    }
+    console.log(multiply(5)); // 5
+
+    //cleaner code will be like this by using dafault parameters
+
+    function multiply(a,b=1) {
+        return a*b;
+    }
+    console.log(multiply(5)); // 5
+
+    console.log(multiply(5, undefined)); //5
+</script>

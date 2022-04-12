@@ -1,0 +1,17 @@
+<script>
+    let l1 = [1,2,3];
+    let l2 = [4,5,6];
+    let newList = [l1,l2];
+    console.log(JSON.stringify(newList));
+    // [[1,2,3], [4,5,6]]
+//we do not want one array of two arrays.We want array of numbers
+/*
+Next, you’ll use spread to merge arrays without creating nested arrays. 
+*/
+    let l1 = [1,2,3];
+    let l2 = [4,5,6];
+    let newList = [...l1, ...l2]
+    console.log(JSON.stringify(newList));
+    // [1,2,3,4,5,6]
+
+</script>

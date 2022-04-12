@@ -1,0 +1,40 @@
+<script>
+/*
+Now, you’ll use a template literal that has placeholders for expressions, which you’ll use to display a date.
+*/
+
+//the old method of string concatenation will be like this
+    function prettyDate(day, dayNumber, month, year){
+        const message = 'the date is ' +
+        day + ', ' +
+        month + ' ' +
+        dayNumber + ', ' +
+        year;
+        return message;
+    }
+
+    const day = 'thursday';
+    const dayNumber = '15';
+    const month = 'december';
+    const year = '2050';
+    console.log(prettyDate(day, dayNumber, month, year));
+
+    //the date is thursday, december 15, 2050
+
+
+/*
+there is cleaner way to write this code using ES6 template literals
+*/
+function prettyDate(day, dayNumber, month, year){
+        const message = `the date is ${day}, ${month} ${dayNumber}, ${year}`;
+       
+        return message;
+    }
+
+    const day = 'thursday';
+    const dayNumber = '15';
+    const month = 'december';
+    const year = '2050';
+    console.log(prettyDate(day, dayNumber, month, year));
+
+</script>

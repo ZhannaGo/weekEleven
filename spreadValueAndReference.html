@@ -1,0 +1,28 @@
+<script>
+   /*
+    Here you’ll practice using the spread notation to make a copy of an array without making a reference to the original array. This will allow you to make changes to the copied array without altering the original array.
+    */
+
+
+    let numbers = [0,1,2,3,4,5];
+    let mycopy = numbers;
+    mycopy[2] = 9;
+    console.log(mycopy); // (6) [0,1,9,3,4,5]
+    console.log(numbers); // (6) [0,1,9,3,4,5]
+/*
+Now we can see that both lists have been changed. They both have number nine at the third position. that is not what we want. The reason  for that is that we made a reference to a numbers.We did not create a new copy of that array.
+
+We will create a new array with a spread notation within JavaScript.
+*/
+    let numbers = [0,1,2,3,4,5];
+    let mycopy = [...numbers];
+    mycopy[2] = 9;
+    console.log(mycopy); // (6) [0,1,9,3,4,5]
+    console.log(numbers); // (6) [0,1,2,3,4,5]
+
+
+
+
+
+
+</script>
